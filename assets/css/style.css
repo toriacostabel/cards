@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.cards {
+  display: flex;
+  width: 100%;
+}
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cards .card .card__img__container {
+  background-color: deeppink;
+  border-radius: 10% 10% 0 0;
+  position: relative;
+}
+.cards .card .card__img {
+  margin: 2em 2em;
+  width: 13em;
+  height: 13em;
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px 6px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 0px 0px 6px 6px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0px 0px 6px 6px rgba(255, 255, 255, 0.75);
+  transition: all 0.4s;
+}
+.cards .card .card__info {
+  background-color: rgba(255, 20, 145, 0.719);
+  border-radius: 10%;
+  height: 15em;
+  width: 100%;
+  margin: -40% 0 0 0;
+}
+.cards .card .card__info .card__title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 2em;
+  margin: 50% 5% 0 5%;
+  width: 90%;
+  text-align: center;
+  color: white;
+}
+.cards .card .card__info .card__text {
+  width: 90%;
+  margin: 5%;
+  position: absolute;
+  visibility: hidden;
+  font-style: italic;
+}
+.cards .card:hover .card__img__container {
+  background-color: deeppink;
+  border-radius: 10% 10% 0 0;
+  position: relative;
+}
+.cards .card:hover .card__img__container .card__img {
+  transform: scale(15em);
+  transition: all 0.5s;
+  margin: 0;
+  border-radius: 10% 10% 0 0;
+  width: 17rem;
+  height: 17rem;
+  box-shadow: none;
+}
+.cards .card:hover .card__info {
+  background-color: deeppink;
+  height: 15em;
+  width: 100%;
+  margin: -20% 0 0 0;
+  transition: all 0.4s;
+}
+.cards .card:hover .card__info .card__title {
+  text-transform: uppercase;
+  margin: 30% 5% 0 5%;
+}
+.cards .card:hover .card__info .card__text {
+  margin: 1% 2%;
+  visibility: visible;
+  font-size: 1.2em;
+  color: white;
+  text-transform: lowercase;
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=style.css.map */
